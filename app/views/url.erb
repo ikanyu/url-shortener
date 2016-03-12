@@ -1,0 +1,13 @@
+The new URL is
+<%= @url.long_url %>
+<%= @url.short_url %>
+
+<% if @urltf1 == true %>
+<p>Short URL is created!</p><br/>
+<p>Long URL is</p><br/>
+<%= @url.long_url %>
+<p>Short URL is </p><br/>
+<%= @url.short_url %>
+<% else %>
+<p>Long URL already exists</p>
+<% end %>

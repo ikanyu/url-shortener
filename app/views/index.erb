@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Welcome to URL Shortener!</h1>
+  <p>Please enter a link!</p>
+
+    <form action="url/create" method="POST">
+    <input type="text" name="long_url" value="">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<table style="width:100%">
+  <% @urls.each do |url| %>
+  <tr>
+      <td><%= url.long_url %></td>
+         <td> <%= url.short_url %></td>
+  </tr>
+    <% end %>
+</table>
